@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layout Using grid Template area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            /* Grid Template Areas - layout will be having 3 rows and these four columns of the type specified*/
+            grid-template-areas:
+                'navbar navbar navbar navbar'     /* 1st row will be taken by the navbar */
+                'section section section aside'  /* 2nd row 3th space - by section and 1th space - by aside tag*/
+                'footer footer footer footer';   /* 3rd row for the footer*/
+
+        }
+
+        .item {
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+
+        /* Grid area  */
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact-Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, laboriosam cupiditate debitis ut fuga
+            recusandae nam delectus molestiae ea mollitia. Fuga, odit, quam eveniet perferendis fugit atque itaque,
+            minus magnam molestiae repellendus vero. Adipisci, consectetur harum corporis esse quae asperiores!.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis neque consequatur!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, soluta voluptatem impedit sint quo
+            molestiae facilis neque eligendi aspernatur. Laudantium illum placeat expedita itaque illo, cupiditate ut
+            delectus culpa nam.
+        </div>
+
+        <!-- footer -->
+        <footer class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, ut.</footer>
+    </div>
+</body>
+
+</html>

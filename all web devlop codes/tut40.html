@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+            /* so container becomes grid and all the items inside it will be -- grid items */
+            /* grid-template-columns: 300px 100px 100px;  there will be three columns made of width(300, 100, 100) */
+            /* grid-template-columns: 300px auto 100px; */
+
+            /* below : giving width as 1th to first part 4th part of web page to 2nd part etc */
+            grid-template-columns: 1fr 4fr 1fr;
+
+            /* for large number of columns --- use repeat(no of columns , width) method*/
+            /* grid-template-columns: repeat(3, auto); */
+
+            /* grid gap for gap or padding between grid items */
+            grid-gap: 2rem;
+            
+        }
+
+        .item{
+            background-color: aquamarine;
+            border: 3px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>

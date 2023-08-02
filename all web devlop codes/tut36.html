@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations ans Key Frames</title>
+    <style>
+        .container{
+            background-color: blanchedalmond;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            /* to make it animated */
+            position: relative;
+            animation-name: sanskruti1;             /* set any name */
+            animation-duration: 2s;
+            /* to run it forever --- use ----- infinite */
+            animation-iteration-count: 3;         /* no of times we want animation to run in single relaod of web page */
+            animation-delay: 2s;
+
+            /* if i want animation result to sustain after completion */
+            animation-fill-mode: forwards;
+
+            /* animation slow to fast (ease-in) */
+            animation-timing-function: ease-in;
+
+            /* to give the directions of the animationm */
+            animation-direction: alternate;
+        }
+
+        /* now for creating animation add keyframe*/
+        /* @keyframes sanskruti1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+        } */
+
+        /* other way */
+        @keyframes sanskruti1{
+            0%{
+                top: 0px;
+                left: 0px;
+
+                background-color: blue;
+                width: 100px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+
+                background-color: blueviolet;
+                width: 300px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+
+                background-color: aquamarine;
+                width: 800px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+                
+                background-color: red;
+                width: 1200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

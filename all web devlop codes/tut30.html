@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 53px;
+            text-align: center;
+            background-color: red;
+            color: black;
+
+            /*  to make it responsive in any phone ipad etc */
+            display: none;
+        }
+
+        /* use media querry -- it is like if-else condition*/
+        
+        @media(max-width:700px){       /*jaise hi humare screen(web page) ki width is 700 px make box-1 display ko block*/
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media(min-width:300px) and (max-width:500px) /* here setting a range to display box-2 only when width is between 500 to 300 px*/
+        {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media(min-width:800px)
+        {
+            #box-3{
+                display: block;
+                background-color: yellow;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">I am an Iphone</div>
+    <div class="box" id="box-2">I am Tablet</div>
+    <div class="box" id="box-3">I am a computer</div>
+    <div class="box" id="box-4">I am a widescreen computer</div>
+</body>
+</html>

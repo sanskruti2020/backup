@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            padding: 23px 30px;
+            margin: 23px 20px;
+            background-color: aquamarine;
+
+            /* box shadow */
+            box-shadow: 12px 10px purple;             /* positive values means --- downward shadow*/
+            /* box-shadow: -12px -10px purple;          negative values means --- upward shadow */
+
+            /* we can also give some third dim -- blur radius */
+            box-shadow: 12px 10px 5px purple;
+
+            /* we can also give some spread radius */
+            box-shadow: 12px 10px 5px 10px purple;
+
+            /* inset or inwards shadow */
+            /* box-shadow: 2px 3px purple inset; */
+
+            /* multiple shadows  */
+            box-shadow: 2px 10px purple, 4px 8px blue;
+        }
+
+        /* Text Shadow */
+        .card h2{
+            text-shadow: 2px 3px white;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Thsi is C++ course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nesciunt expedita maxime amet.
+                Nesciunt amet in excepturi nihil doloremque quas nam, autem corrupti cupiditate distinctio, cum nulla ex
+                quo ipsam.
+            </p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nesciunt expedita maxime amet.
+                Nesciunt amet in excepturi nihil doloremque quas nam, autem corrupti cupiditate distinctio, cum nulla ex
+                quo ipsam.
+            </p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nesciunt expedita maxime amet.
+                Nesciunt amet in excepturi nihil doloremque quas nam, autem corrupti cupiditate distinctio, cum nulla ex
+                quo ipsam.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // Arrow function
+        let greet = ()=> {
+            console.log("Good morining");
+        };
+        // let greet = ()=> console.log("Good morining");
+        greet();
+
+        // let sum = (a, b)=>{
+        //     return a+b;
+        // };
+        let sum = (a, b) => a+b;        // shortcut of the above function
+        let ans = sum(3,4);
+        console.log(ans);
+
+        let half = a => a/2;
+        console.log(half(4));
+
+        let obj = {
+            names : ["sanskruti", "Ram", "Rahul"],
+            speak(){
+                this.names.forEach(
+                    (student) =>{
+                        console.log("kukdooku " + student);
+                });
+            }
+        };
+        obj.speak();
+
+    </script>
+</body>
+</html>

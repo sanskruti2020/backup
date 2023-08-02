@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h2{
+            background-color: cyan;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* lets see methods to select different paragraphs of the body */
+        div p{                            /* div ke andar jitne bhi paragraphs hai unke liye */
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        /* properties for --- div ke andar p and p ke andar li --- but aisa toh kuch nahi hai so no change */
+        /* so lets say ---- div ke andar li and li ke andar ke p ko agar change karna hai so */
+        div li p{
+            background-color: yellow;
+        }
+
+        /*  now to target only the p that are directly used in div */
+        /**
+        div > p{
+            background-color: blanchedalmond;
+        }
+        **/
+
+        /* suppose if  want to target jiske pichle siblings are p */
+        /* div + p{
+            background-color: red;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <h2>More on selectors</h2>
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph</p>
+
+            <ul>
+                <li class="item"><p>This is another paragraph inside li and ul</p></li>
+                <p>This is a para inside ul</p>
+            </ul>
+
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

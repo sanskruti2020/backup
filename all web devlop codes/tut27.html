@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 170px;
+            height: 170px;
+
+        }
+
+        #box1{
+            background-color: rgb(175, 125, 218);
+            position: relative;
+            top: 100px;
+            /* the element whose z index value is greter will dominate other */
+            z-index: 45;
+
+        }
+
+        #box2{
+            /* for applying z index concept on both box 1 and 2 */
+            position: relative;
+            top: 14px;                       /* this pink box will overlap over box 1*/
+            z-index: 40;                    /* now since z index of 1 >2 so box 1 will overlap over 2*/
+
+            background-color: pink;
+            /* visibility: hidden;    ---------- box will get hide and space will be shown empty in place of box 2**/
+            /* display: none;              *with these box gets hidden and also there is no gap/empty space in place of box 2* */
+        }
+
+        #box3{
+            background-color: rgb(43, 226, 144);
+        }
+
+        #box4{
+            background-color: rgb(226, 150, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

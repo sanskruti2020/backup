@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Designs</title>
+
+    <style>
+        .container{
+            font-size: 10px;
+
+            border: 2px solid red;
+            /*  to get the border of the container fully on the viewport or the webpage */
+            width: 100vw;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #first{
+            font-size: 5em;                 /* it means it will take font size of 5 times its parent(container class) -- 50px*/
+            padding: 3em;
+        }
+
+        /* in order to understand rem unit  */
+        /* rem unit means font size to be n times html font -----   */
+        html{
+            font-size: 25px;
+        }
+
+        #second{
+            font-size: 3rem;                /* here -- 25*3 = 75 px*/
+            padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

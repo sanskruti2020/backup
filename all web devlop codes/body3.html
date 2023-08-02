@@ -1,0 +1,80 @@
+<!-- tutorial 7 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- to add the table border lines we will use this syntax -->
+<style>
+    table th, td{
+        border:1px solid black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists And Tables</title>
+</head>
+
+<body>
+    <!-- unordered list -->
+    <ul>
+        <li>This is the first item of unordered list </li>
+        <li>This is the second item of unordered list </li>
+        <li>This is the third item of unordered list </li>
+    </ul>
+
+    <!-- unordered list with attributes-->
+    <ul type="square">
+        <li>This is the first item of unordered list </li>
+        <li>This is the second item of unordered list </li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol>                  <!-- by default it is in numeric (1,2,3...) -->
+        <li>This is the first item of ordered list</li>
+        <li>This is the second item of ordered list</li>
+        <li>This is the third item of ordered list</li>
+    </ol>
+
+    <!-- for roamn numbering -->
+    <ol type="I">                  
+        <li>This is the first item of ordered list</li>
+        <ul>
+            <li>list inside list</li>
+        </ul>
+        <li>This is the second item of ordered list</li>
+    </ol>
+
+    <!-- HTML Tables -->
+    <h2>HTML TABLE</h2>
+    <table>                             <!-- har table tag ke andar we will have 1] thead and 2] tbody -->
+        <thead>
+            <!-- now for starting a column ke titles --- table ki heading   -->
+            <tr>
+                <th>Emp Name</th>
+                <th>Emp Id</th>
+                <th>Emp Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- now for the content of the table in body -->
+            <tr>
+                <!-- writing row wise details-->
+                <td>Sanskruti</td>
+                <td>222028</td>
+                <td>Programmer</td>
+            </tr>
+
+            <tr>
+                <!-- writing row wise details-->
+                <td>Rahul</td>
+                <td>222030</td>
+                <td>Student</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

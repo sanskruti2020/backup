@@ -1,0 +1,35 @@
+<!-- tutorial 10 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Id</title>
+</head>
+<body>
+    <h3>Id's and Classes tutorial</h3>
+    <div id="mainBox" class="redBg">     <!-- remember id here must be a unique for each element cant be same for any other tag-->
+        <!-- whatever properties we will give under class will be applied to all its inner elements  -->
+        <!-- we can add en number of classes in the class by giving space -->
+        this is main Box
+    </div> 
+    <span class="redBg blackBorder"></span>   <!-- giving two classes at a time -->
+    
+    <!-- Emmet -->
+    <!-- (. is for class ) and (# is for id) -->
+    <!-- suppose if i need a span tag of class redBg and class yellow---= span.redBg.yellow + Enter  -->
+    <!-- suppose if i  want a span tag of id as mainSpan---= span#mainSpan + Enter -->
+    <span class="redBg"></span>
+    <span id="mainSpan"></span>
+    <!-- emmet takes div tag as default ---= .redBg -->
+    <div class="redBg"></div>
+
+    <!-- creating multiple elements using Emmet -->
+    <!-- if i want 3 span tags of same class ---= span.myClass1.myClass2.myClass3*3-->
+    <span class="myClass1 myClass2 myClass3">first</span>
+    <span class="myClass1 myClass2 myClass3">second</span>
+    <span class="myClass1 myClass2 myClass3">third</span>
+    
+</body>
+</html>

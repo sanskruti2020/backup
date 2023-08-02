@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(185, 236, 219);
+}
+
+#clockContainer{
+    position: relative;
+    height: 40vw;                    /* viewport width and height -- responsive */
+    width: 40vw;
+    background: url("clock.png");
+    background-repeat: no-repeat;
+    background-size: 100%;          /* to make background image fully inisde the container */
+    /* to make container to center of web page  */
+    margin: auto;
+}
+
+#hour, #minute, #second{
+    position: absolute;            /* so that we can move its hands*/
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;      /* so that hand will rotate from bottom */ 
+}
+
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#minute{
+    width: 1.4%;
+    height: 32%;
+    top: 18%;
+    left: 48.9%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#second{
+    width: 1%;
+    height: 44%;
+    top: 7%;
+    left: 49.25%;
+    opacity: 0.8;
+    /* display: none; */
+}

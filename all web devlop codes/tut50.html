@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+
+<body>
+    <script>
+        var str = "This is a position.";
+        console.log(str);
+
+        // first occurance
+        var position = str.indexOf("po");            // to find index or the position of any word in string
+        console.log(position);
+
+        // last occurance
+        var pos = str.lastIndexOf("is");
+        console.log(pos);
+
+        // particulaar charachter at an index
+        var char = str.charAt(2);
+        // var char = str.charCodeAt(2);
+        console.log(char);
+
+        //substring from a string
+        // var substr = str.slice(1,6);     // printing from index (1 to 5) th position
+        var substr = str.substring(1,6);
+        console.log(substr);
+
+        // (konse index se chalu karna,  no of charachter to print)
+        var substr1 = str.substr(1,6);    // this extract the characters of the length given (1 to 6) postion 
+        console.log(substr1);
+        
+        var replaced = str.replace('position', 'Hello');  //(to be replaced, after replacing )
+        console.log(str);                     // old string will not be changed
+        console.log(replaced);
+
+        // convert to uppercase  and lowercase charachter
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // concate method or +
+        var concated = str.concat("new string");
+        console.log(concated);
+
+        // removing the white spaces
+        var newStr = "    this contains     lot of white spaces   ";
+        console.log(newStr);
+        console.log(newStr.trim());   // remove white spaces from front and end 
+
+    </script>
+</body>
+</html>

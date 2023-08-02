@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Events</title>
+    <style>
+        #btn {
+            background-color: blueviolet;
+            color: white;
+            border: 3px solid black;
+            padding: 10px 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- browser events : --- syntax = on_EventName = ''
+    EventName can be : 
+    click
+    contextmenu
+    mouseover / mouseout
+    mousedown / mouseup
+    mousemove
+    
+    submit
+    focus
+
+    DOMcontentloaded -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam cum sapiente obcaecati
+            accusamus et, numquam voluptates voluptate repellendus eos sit ex, asperiores autem adipisci ipsum
+            aspernatur perferendis placeat quia soluta nisi fugiat! Ut ipsa dignissimos error aut est blanditiis.</p>
+    </div>
+
+    <button id="btn" onclick="hide()">Show / Hide</button>
+
+    <script>
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+        //  Now let suppose if i want that as my mouse will be on para an alert box is shown
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            // alert("Mouse inside para !!");
+            console.log("Mouse inside para !!");
+        });
+
+        para.addEventListener('mouseout', function run(){
+            // alert("Mouse now outside para !!");
+            console.log("Mouse now outside para !!");
+        });
+    </script>
+</body>
+
+</html>

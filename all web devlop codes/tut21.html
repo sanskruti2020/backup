@@ -1,0 +1,104 @@
+<!--  for doing alignemnt in any web page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Float Clear</title>
+    <style>
+        /* adding for all the items */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* to add font family in all the text apply it in body */
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* adding for items in class container */
+        .container {
+            /* it is containing all the three items - fruits, computer, general */
+            border: 5px solid blue;
+            width: 800px;
+            /* to get that box in center --- this makes the element in the centre of the web page */
+            margin: auto;
+            background-color: antiquewhite;
+        }
+
+        /* adding for items under class item */
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(227, 204, 204);
+        }
+
+        /* now in order to float all three items either left or right and not to display one below the other */
+        #fruits {
+            float: left;
+            width: 50%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #general {
+            /* float: left; */
+            /* and to make box or border of container appear outside these items */
+            clear: both;                      /* in order to avoid overlapping form both left and right sides */
+            width: 100%;
+        }
+
+        p, h3{
+            text-align: center;
+            /* text-align: justify; */
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  trying to make something like big basket -->
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <!-- this division contains three classification of items-->
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corrupti nemo cum omnis. Iusto nam eius
+                porro fuga. Quia, incidunt?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptate
+                aspernatur numquam, sed ipsam voluptates, aliquam cum dolore impedit ea, aut repellat facere. Ad in
+                distinctio unde eveniet. Itaque, officiis.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corrupti nemo cum omnis. Iusto nam eius
+                porro fuga. Quia, incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusantium
+                magnam iste delectus animi amet vero quidem illum, voluptatem reiciendis, adipisci doloribus. Omnis
+                ipsum voluptates, ipsam nulla nesciunt ad optio?
+            </p>
+        </div>
+
+        <div id="general" class="item">
+            <h3>Stationary</h3>
+            <p id="generalpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corrupti nemo cum omnis. Iusto nam eius
+                porro fuga. Quia, incidunt?
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

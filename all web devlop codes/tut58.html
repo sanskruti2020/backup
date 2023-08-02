@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript Settimeout SetTiemin</title>
+</head>
+<body>
+    <div class="contaier">
+        This is conatainer..
+        Time now is <span id="gettime"></span>
+    </div>
+
+    <script>
+        // setTimeout --> Alllows us to run the function once after the interval of time
+        // clearTimeout --> Alllows us to run the function repeatedly after the interval of tim
+
+        // SET TIME OUT
+
+        function greet(name)
+        {
+            console.log("hello, good morining " + name);
+        }
+        // to get this greeting output after a specific time interval
+        // dont give () this bracket in the function
+        // 2nd argument is time in milliseconds
+        // if we want to pass any argument in funciton it will be passed as a third argument
+        // setTimeout(greet, 5000, "Sanskruti"); 
+        let id = setTimeout(greet, 5000, "Sanskruti");
+        
+        // Clear Time Out
+        // we will require an unique id of set time out
+        console.log(id);
+        clearTimeout(id);   // now no output will be shown
+
+        // Set Interval
+        // want to run greet after every 2sec
+
+        // setInterval(greet, 2000, "Sanskruti");
+        let intervalId = setInterval(greet, 2000, "Sanskruti");
+        clearInterval(intervalId);
+
+        //  to display date - time
+        function display()
+        {
+            let time = new Date();
+            // console.log(time);
+            document.getElementById('gettime').innerHTML = time;
+        }
+        setInterval(display, 1000);
+    </script>
+    
+</body>
+</html>

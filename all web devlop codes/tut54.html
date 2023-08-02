@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alert, Prompt, Confirm</title>
+</head>
+
+<body>
+    <div class="container">This is a page </div>
+
+    <script>
+        // Alert in in-browser javascript  ---> dont return anything
+        alert("this is a message");
+
+        // if we want to ask something from user ---- prompt(message, default argument)
+        // let name = prompt("What is your name?"); -- this is also correct 
+        let name = prompt("What is your name?", "Guest");
+
+        // Confirm  --- warining to user
+        let deletepost = confirm("Do you really want to delete this?");
+        // ok -- return true     cancel -- false 
+        console.log(deletepost);
+        if(deletepost)
+        {
+            console.log("Post deleted");
+        }
+        else{
+            console.log("Post not deleted");
+        }
+
+
+    </script>
+</body>
+</html>

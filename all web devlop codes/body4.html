@@ -1,0 +1,78 @@
+<!-- tutorial 8 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h2>This is HTML Forms tutorial </h2>
+    <form action="backened.php">                <!--we will be required to give some backened where we want to give our data in form -->
+        <!-- lets add some input tag inside the form(input tag -- where user will give some input) -->
+        <!-- here either use <br> tag or <div> </div> tag to add break line  -->
+        <div>
+            Name: <input type="text">
+        </div>
+        <br>
+        <!-- use of label tag -- it is another way to display output -->
+        <!-- remember value of (for in label) must be same as (id in input tag) -->
+        <div>
+            <label for="name">Surname:</label>
+            <input type="text" name="MySurname" id="name">
+        </div>
+        <br>
+        <div>
+            Roll_No: <input type="text">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="My Email">       <!-- here this name attribute is something that can be taken from backened-->
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="Today's Date">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="MyBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="Eligigbility">
+        </div>
+        <br>
+        <div>
+            <!-- only out of Male/Female only one of the option will be selected if we use the same --- name value -->
+            Gender: Male: <input type="radio" name="myGender"> FeMale: <input type="radio" name="myGender">
+        </div>
+        <br>
+        <!-- using a select tag -->
+        <div>
+            <label for="car">Cars:</label>
+            <select name="myCar" id="car">
+                <option value="Indica">Indica</option>
+                <option value="Tata" selected>Tata</option>   <!--lets say if i want to keep tata as my default select option use selected-->
+                <option value="Swift">Swift</option>
+            </select>
+        </div>
+        <br>
+        <!-- making use of text area tag -->
+        <div>
+            write about yourself<textarea name="myTextArea" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- it will submit all the details in the backened connected -->
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            <!-- it will reset all the values -->
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>

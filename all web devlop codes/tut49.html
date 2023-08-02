@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Js</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit, amet consectetur.</h1>
+        <h2 id="content"></h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat deleniti voluptas delectus perspiciatis,
+            iste molestias quam eveniet, ducimus, nulla reiciendis eos velit? Cumque beatae voluptate fugit veritatis
+            ipsa eius quia!
+        </p>
+    </div>
+
+    <script>
+        var string = "this";
+        var name = "Sanskruti"
+        var message = "good girl";
+        var temp = `Her name is ${name} and she is a ${message}`;    //   ---> `` quotes
+        console.log(temp);
+        // console.log(string + message);
+        var len = name.length;
+        console.log(`Length of string name is ${len}`);
+
+        // escape sequence charachter ---> \n , \t, \b, \\
+        console.log("\\ hello \n world \\");
+
+        document.getElementById("content").innerHTML="<h2> Hello <\h2>";
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- tutorial 11 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <div class="container">This is a paragraph</div>
+<!-- what do we expect below is all spaces to be printed but actually html reduces all manual spaces to just one so no gap will be printed-->
+    <div class="container">This is another             paragraph</div> 
+    <!-- to givr some gaps/ spaces we will use entities -->
+    <!-- &nbsp;   --- it is non breaking space  -->
+    <div class="container">This is another &nbsp; paragraph</div> 
+
+    <!--  to print any word like this in html --- <p>  -->
+    <div class="container">
+        <p>This is another entitity &lt;p&gt; </p>
+        <p>Pound is writteen like this &pound; </p>
+        <p>Copyright is written like this &copy; </p>
+        <p>Empty charachter is writtern like this &#8203; </p>
+    </div>
+
+</body>
+</html>

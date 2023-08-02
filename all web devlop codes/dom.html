@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Object Types</title>
+</head>
+
+<body id="body" class="page main">
+    <div id="firstDiv" class="allDivs"> First Div</div>
+    <!-- <script>
+            // const allDivs  = document.querySelectorAll(".allDivs")
+            // console.log(allDivs)
+        </script> -->
+
+    <ul id="element" data="valid">
+        <li class="list-item">Tittle 1</li>
+        <li class="list-item">Tittle 2</li>
+        <li class="list-item">Tittle 3</li>
+    </ul>
+    <div class="allDivs"> Second Div</div>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <!-- <button id="clickBtn" onclick="alert('hello')">Click Me</button> -->
+    <button id="clickBtn">Click Me</button>
+
+    <script>
+        // Root Node
+        console.log(document.documentElement);
+        console.log(document.body)
+        console.log(document.head)
+
+        // Childrens
+        console.log(document.body.childNodes)
+        console.log(document.body.children)
+        // to traverse each child of the body
+        for (node of document.body.children) {
+            console.log(node);
+        }
+
+        // First and Last child
+        console.log(document.body.firstChild)
+        console.log(document.body.lastChild)
+        console.log(document.body.firstElementChild)
+        console.log(document.body.lastElementChild)
+
+        // to get the childrens in the form of an array
+        const childrensOfBody = Array.from(document.body.children)
+        console.log(childrensOfBody);
+
+        // Siblings
+        const ulTag = document.body.children[0]
+        const firstLi = ulTag.children[0]
+        const secondLi = ulTag.children[1]
+        // console.log(secondLi.previousElementSibling.textContent)
+
+        // Table DOM Manipulation
+        const tableTag = document.body.children[1]        // table is the 2nd children (index = 1)
+        // console.log(tableTag.tBodies[0].rows)
+        // console.log(tableTag.tBodies[0].rows[0].cells)
+        // console.log(tableTag.tBodies[0].rows[0].cells[0])
+        // console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue;")
+
+        // ID search
+        // element.style.background = "red"
+        const ulTag1 = document.getElementById("element")
+        ulTag.style.backgroundColor = "red"
+
+        // Search by class name 
+        listItem = document.getElementsByClassName("list-item")
+        // to get the all the elements inside a tag here let say =--- <table>......</table>
+        console.log(document.getElementsByTagName("table"))
+
+        // Querry Selector
+        const vari = document.querySelector('.list-item')
+        console.log(vari)
+
+        const varii = document.querySelectorAll('.list-item')
+        console.log(varii)
+
+        const var1 = document.querySelectorAll('#element')
+        console.log(var1)
+
+        const listItems = document.querySelectorAll('ul > li:nth-child(2)')    // using pseudo selector
+        console.log(listItems[0].textContent)
+
+        // Attributes
+        console.log(element.getAttribute('data'))
+        console.log(element.setAttribute('order-placed', 'pending'))
+        console.log(element.removeAttribute('order-placed'))
+        console.log(element.hasAttribute('order-placed'))
+        console.log(element.attributes)
+
+        // Attributes
+        console.log(element.id)
+        console.log(element.data)
+        // we have to use getattribute to get it 
+        console.log(element.getAttribute('data'))
+        //(name of attr, value we are giving to it)
+        console.log(element.setAttribute('order-placed', 'pending'))
+        console.log(element.removeAttribute('order-placed'))
+        console.log(element.hasAttribute('order-placed'))
+        console.log(element.attributes)
+
+        // Creating and Removing the node elements
+        const newDiv = document.createElement('div')    // pass tag name
+        // const newText = document.createTextNode('Namaste World')
+        // newDiv.appendChild(newText)
+        // body.append(newDiv)                 // will add that div tag at last
+        // body.prepend(newDiv)                // will add div tag to top
+        // body.before(newDiv)
+        // body.after(newDiv)
+        // firstDiv.replaceWith(newDiv)
+        // firstDiv.remove()
+
+        // or other method
+        newDiv.textContent = "Namaste World"            // to add any text 
+        body.append(newDiv)
+        //  to add another tag insdie div tag
+        newDiv.innerHTML =                             // use inner.html to add another tag and its html code
+            `<ul id="element" data="valid">
+        <li class="list-item">First element</li>
+        <li class="list-item">Second element</li>
+        <li class="list-item">Third Element</li>
+        </ul>`
+
+        // Button - Events
+        function callMe(event) {
+            console.log(event.type)
+            console.log(event.currentTarget)
+            console.log(event.clientY)
+            console.log(event.clientX)
+            alert("Thanks for Watching")
+        }
+        // id.eventName = function()
+        // clickBtn.onclick = callMe    ---- calling the function
+
+        // OR Method 
+        //                       (eventName, function)
+        clickBtn.addEventListener('click', callMe)
+        // clickBtn.addEventListener('click', function(){
+        //     alert("Thanks")
+        // })
+        // clickBtn.removeEventListener('click',callMe)
+        // clickBtn.removeEventListener('click', function(){
+        //     alert("Thanks")
+        // })
+
+    </script>
+</body>
+
+</html>

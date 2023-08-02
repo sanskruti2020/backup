@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulating DOM</title>
+    <!-- DOM -- doccument object model -->
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Info</li>
+            <li>Contsct Us</li>
+        </ul>
+    </div>
+
+    <div class="container">This is a container</div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);       // now i am able to access element whose id is main in console 
+        console.log(main.innerHTML);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        // we can access each container by --- containers[index]
+
+        let sel = document.querySelector('.container');
+        console.log("Selector returns ", sel);
+
+        let selector = document.querySelectorAll('#nav>li')
+        console.log("Selector returns ", selector);
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and Mode designing</title>
+    <style>
+        .container{
+            border: 3px solid red;
+            background-color: rgb(175, 215, 114);
+            margin: 34px auto;
+            padding: 34px;
+            width: 600px;
+        }
+
+        a{
+            text-decoration: none;       /* to remove the underline under Read more(a tag- href) */
+            color: black;
+        }
+
+        a:hover{            /* kya ho jab hum pointer ko us a(link) ke upar leke jaye*/
+            color: black;
+            background-color: bisque;
+        }
+ 
+        a:visited{      /* what should happen after visiting link*/
+            /* after visiting the link i want color of link to be changed */
+            background-color: brown;
+        }
+
+        a:active{
+            background-color: blue;
+        }
+        
+        .butn{
+            background-color: aquamarine;
+            border: none;
+            padding: 6px;
+            cursor: pointer;           /* this allows to have on click when pointing to button or link*/ 
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .butn:hover{
+            color: blueviolet;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor aliquid nihil perspiciatis, sequi
+            sapiente nisi voluptatum quas corrupti incidunt tempora quibusdam sed sint blanditiis saepe vero distinctio
+            nulla commodi eum, exercitationem doloribus! Nihil.
+        </p>
+        <a href="https://google.com" class="butn">Read More</a>                   <!-- on click link-->
+        <button class="butn">Contact Us</button>                <!-- On click button-->
+    </div>
+</body>
+
+</html>

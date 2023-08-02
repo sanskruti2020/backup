@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            border: 3px solid black;
+            background-color: aquamarine;
+            height: 2330px;
+        }
+
+        /* position-- 4types : static(default), absolute, relative, fixed , sticky */
+        .block {
+            display: inline-block;
+            /* so that sare blocks ek hi line mein aa jaye*/
+            background-color: antiquewhite;
+            border: 3px solid rgb(195, 123, 123);
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+        }
+
+        #block3 {
+            /* positon : relative to its normal position (gap banane ke liye)-- ie it can move top, bottom, left, right */
+            /* position: relative; */
+            /* top: 40px; */
+
+            /* position : absolute: if we dont want that item/ element and also no gap in its normal position */
+            /* position: absolute; */
+
+            /* position : fixed means it means be fixed in that given position along with scrolling  */
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+        }
+        #block4{
+            /* position : sticky : generally for creting menus*/
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block" id="block1">1</div>
+        <div class="block" id="block2">2</div>
+        <div class="block" id="block3">3- chat with us </div>
+        <div class="block" id="block4">4</div>
+    </div>
+</body>
+
+</html>

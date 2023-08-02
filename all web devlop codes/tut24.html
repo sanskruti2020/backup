@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            /* to make element / box to appear at the center we need to add width + margin:auto  ---- center */
+            margin: auto;
+            border: 3px solid red;
+            width: 1300px;
+        }
+
+        img {
+            width: 150px;
+            /* similarly to make image at the center of box */
+            margin: auto;
+            display: block;
+            /* making it as block element*/
+        }
+
+        h3 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0px;
+        }
+
+        .box{
+            background-color: beige;
+            border:3px solid black;
+            margin: 0px;
+            padding:30px;
+
+            display: inline-block;     /* isse it will be inline as well as block*/
+            /* now we can easily set the width */
+            width: 33%;
+            box-sizing: border-box;         /*with these all boxes will be on same line*/
+        }
+
+        .container{
+            width: 1300px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="">
+        <h3>Welcome to Sanskruti's blog</h3>
+    </header>
+
+    <!-- now to understand the inline block element -->
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et asperiores architecto nemo ipsa
+                autem sequi enim facere veniam, unde delectus, molestias quia cum voluptatibus? Est deleniti cum ullam
+                ratione repellat tenetur fugit, libero fuga at, modi distinctio dolorem sapiente!</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et asperiores architecto nemo ipsa
+                autem sequi enim facere veniam, unde delectus, molestias quia cum voluptatibus? Est deleniti cum ullam
+                ratione repellat tenetur fugit, libero fuga at, modi distinctio dolorem sapiente!</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et asperiores architecto nemo ipsa
+                autem sequi enim facere veniam, unde delectus, molestias quia cum voluptatibus? Est deleniti cum ullam
+                ratione repellat tenetur fugit, libero fuga at, modi distinctio dolorem sapiente!</p>
+        </div>
+    </div>
+</body>
+
+</html>

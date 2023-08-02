@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Simple si html</div>
+    <script>
+        let myvar1 = 28;
+        let myvar2 = "sanskruti";
+        let myvar3 = true;           // boolean
+        let myvar4 = null;
+        let myvar5 = undefined;     // default value of any unassigned variable is -- undefined (ex-- let var;)
+
+        // object 
+        let employee = {           
+            name : "sanskruti",
+            age : 20,
+            channel : "do your best",
+        };
+        console.log(employee);
+        //  two ways to access its values---- 1] obj.key    2] obj['key']
+        console.log(employee.age);     // we can ask for specific key and values
+        console.log(employee.name);   // or ---- employee['name']
+
+        // Arrays
+        let values = [2, 2.5, "sanskruti"];
+        console.log(values);
+        console.log(values[2]);          // values at specific indexes 
+        console.log(values[0]);
+
+        //  array -- object using -- new keyword 
+        //  to create an array of size n -----> let var = new Array(n);
+        let obj = new Array(2, 4, 2.5, undefined, 8, "sanskruti");
+        console.log(obj[2]); 
+        console.log(obj.length)
+        obj = obj.sort();
+        obj.push("This is pushed!");
+        console.log(obj);
+    </script>
+</body>
+</html>
