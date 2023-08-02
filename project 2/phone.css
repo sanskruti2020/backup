@@ -1,0 +1,65 @@
+/* so if the user will open the website in the phone or tab this css will be executed */
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 10px;
+}
+
+/* Home section */
+#home{
+    height: 270px;
+    padding: 3px 68px;
+}
+
+#home::before{
+    height: 400px;
+}
+
+#home p{
+    font-size: 15px;
+}
+
+/* services section */
+#services{
+    flex-direction: column;
+}
+
+#services .box img {
+    height: 118px;
+    margin: auto;
+    display: block;
+}
+
+/* Client section */
+#clients{
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
+
+#clients img{
+    width: 60px;
+    height: auto;
+}
+
+/* contact us section */
+#contact{
+
+}
+
+/* Footer */
+
+/* utitlity classes */
+.h-primary{
+    font-size: 25px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

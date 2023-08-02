@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskruti Fitness</title>
+
+</head>
+<!-- linking font family -->
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<!-- linking the css file -->
+<link rel="stylesheet" href="project1.css">
+<style>
+    body {
+        font-family: 'Secular One', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(gym1.jpg);
+        /* by default make text color as white */
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 54px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 65px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        /* to make it to center */
+        display: block;
+        margin: 20px auto;
+        width: 36%;
+
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        /* to make this appear on the right side of the header */
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        /* to remove the line below the texts */
+        /*  to add spacing between text use padding */
+        padding: 34px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        /*  i want that whenever i go on any element of navbar it must show an underline below it */
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Secular One', sans-serif;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 5px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        /* for rounding up the buttons*/
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    /* now styling for the form  */
+    .container {
+        border: 2px solid white;
+        margin: 135px 174px;
+        padding: 9px 16px;
+        width: 20%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Secular One', sans-serif;
+        /* input tag line ko change kar rahe */
+        text-align: center;
+        display: block;
+        width: 243px;
+        padding: 6px;
+        margin: 17px;
+        border: 4px solid black;
+        border-radius: 17px;
+    }
+
+    /* in order to target a specific eleemnt */
+    .container h1{
+        text-align: center;
+    }
+
+    .container button{
+        /* to make it center */
+        display: block;
+        margin: auto;
+        width: 95px;
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+        <!--left for logo-->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Sanskruti Fitness</div>
+        </div>
+        <!-- middle for navigation  bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for some search etc buttons-->
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+
+            <div class="form-group">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
