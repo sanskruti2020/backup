@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css? family=Inter:400, 300, 600 | Source+Sans+3:400, 600");
+
+:root {
+    --black-4:
+        rgba(0, 0, 0, 0.722);
+    --black-3: rgba(0, 0, 0, 0.729);
+    --black-2:
+        rgba(0, 0, 0, 0.949);
+    --black: rgba(0, 0, 0, 1);
+    -congress-blue: rgba(14, 67, 146, 1);
+    --alto: Irgba(217, 217, 217, 1);
+    --white: rgba(255, 255, 255, 1);
+    --font-size-xs: 20px;
+    --font-size-s: 22px;
+    --font-size-m: 24px;
+    -font-size-1: 32px;
+    --font-family-inter: "Inter";
+    --font-family-source_sans_3: "Source Sans 3";
+}
+
+/* Classes */
+
+.sourcesans3-normal-black-24px {
+color: var(--black);
+font-family: var(--font-family-source_sans_3);
+font-size: var(--font-size-m);
+font-weight: 400;
+}
+
+.frame-1 {
+    align-items: flex-start;
+    background-color: var(--white);
+    border: none;
+    display: flex;
+    /* gap: 70px; */
+    width: 100%;
+    height: 100%;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.flex-col {
+    flex-direction: column;
+    gap: 27px;
+    margin-top: 76px;
+    min-height: 669px;
+    width: 504px;
+}
+
+.frame-1 .flex {
+    align-items: flex-start;
+    display: flex;
+}
+
+.flex-col-1 {
+    align-items: center;
+    min-height: 577px;
+    width: 504px;
+}
+
+.frame-1 .flex-col-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlap-group {
+    height: 81px;
+    margin-top: 141px;
+    position: relative;
+    width: 504px;
+}
+
+.title {
+    left: 79px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 24px;
+    width: 291px;
+}
+
+.frame-1 .rectangle {
+    left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.rectangle-2 {
+    background-color: var(--alto);
+    border-radius: 45.5px;
+    height: 77px;
+    width: 504px;
+}
+
+.frame-1 .key-g1bcc22491_1280-removebg-preview {
+    height: 52px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    width: 81px;
+}
+
+.key-g1bcc22491_1280-removebg-preview-1 {
+    top: 20px;
+}
+
+.overlap-group3 {
+    background-color: var(--alto);
+    border-radius: 45.5px;
+    height: 77px;
+    margin-top: 29px;
+    position: relative;
+    width: 504px;
+}
+
+.password {
+    left: 79px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 19px;
+    width: 291px;
+}
+
+.key-g1bcc22491_1280-removebg-preview-2 {
+    top: 13px;
+}
+
+
+
+.image-4-1 {
+    height: 249px;
+    margin-right: 28px;
+    object-fit: cover;
+    width: 220px;
+}
+
+.flex-row {
+    gap: 173px;
+    height: 65px;
+    min-width: 504px;
+}
+
+.overlap-group2 {
+    border-radius: 30px;
+    height: 58px;
+    margin-top: 1px;
+    position: relative;
+    width: 114px;
+}
+
+.login {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 13px;
+}
+
+.rectangle-24 {
+    background-color: #0e4392;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px #00000040;
+    cursor: pointer;
+    height: 58px;
+    width: 114px;
+}
+
+.flex-col-2 {
+    align-items: flex-end;
+    min-height: 65px;
+    width: 217px;
+}
+
+
+
+.help {
+    color: var(--black);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 9px;
+    min-height: 27px;
+    width: 81px;
+}
+
+.forgot-password {
+    color: #5c96ec;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 38px;
+    width: 217px;
+}
+
+.overlap-group1 {
+    align-items: flex-start;
+    background: linear-gradient(180deg, rgb(76.63, 141.26, 238.21) 0%, rgba(79.66, 144.36, 241.4, 0) 100%);
+    display: flex;
+    height: 1024px;
+    min-width: 783px;
+    padding: 236px 164px;
+}
+
+.man-img {
+    height: 510px;
+    object-fit: cover;
+    width: 454px;
+}
