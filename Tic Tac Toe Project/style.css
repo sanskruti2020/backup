@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Slab:wght@600&family=Ubuntu:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav {
+    background-color: #c459d6;
+    ;
+    color: black;
+    height: 58px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 3px 14px;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.gameContainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto Slab', serif;
+}
+
+.box {
+    border: 3px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+
+    /* to center X and Y */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #e6b5ee;
+}
+
+.gameInfo {
+    padding: 0 34px;
+}
+
+.imgbox img {
+    /* hiding the gif used */
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* to remove the borders of the box grid  */
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+
+/* reset button */
+#reset {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #c459d6;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.info{
+    font-size: 25px;
+    color: purple;
+    padding: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heading{
+    padding: 28px;
+}
+
+.line{
+    background-color: black;
+    width: 3px;
+    height: 3px;
+}
+
+/* media querry to make it responsive */
+@media screen and (max-width: 1040px) {
+    .gameContainer{
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    #reset{
+        padding: 3px 8px;
+        font-size: 18px;
+    }
+    .info{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3, 12vw);
+        grid-template-columns: repeat(3, 12vw);
+    } 
+    .imgbox img {
+        /* hiding the gif used */
+        width: 100px;
+        transition: width 1s ease-in-out;
+    }
+}
