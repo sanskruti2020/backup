@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Slab:wght@600&family=Ubuntu:ital,wght@1,500&display=swap');
+
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif; */
+body {
+    background-color: bisque;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    height: 65px;
+    color: white;
+    align-items: center;
+}
+
+/* Navbar elements  */
+nav ul li {
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+/* Logo */
+.brand img {
+    width: 69px;
+    padding: 0px 5px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: #00ff89;
+    ;
+}
+
+/* bottom bar */
+.bottom {
+    background-color: black;
+    bottom: 0;
+    height: 130px;
+    position: sticky;
+    color: white;
+
+    /* to make progress bar at the center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to keep the gif to the left of the bottom bar use position : absolute */
+.songInfo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.songInfo h4{
+    padding: 14px;
+    font-size: 17px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+/* icons */
+.icons {
+    margin-top: 20px;
+}
+
+.icons i {
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* all songs playlist etc */
+.container {
+    min-height: 58vh;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    /* container box styling center  */
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 30px;
+    background-image: url("i10.avif");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0px 23px;
+}
+
+.songItemContainer{
+    margin: 20px 0px;
+}
+
+.timestamp{
+    margin: 0px 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+#ProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
